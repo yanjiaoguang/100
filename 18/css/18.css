@@ -1,0 +1,231 @@
+/* 
+* @Author: sublime text
+* @Date:   2014-10-30 09:33:32
+* @Last Modified by:   Administrator
+* @Last Modified time: 2010-01-11 16:50:03
+*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+body{
+	font-size: 0.75rem;
+	background-image: url(../images/18/bg.jpg);
+	background-size: cover;
+}
+ul{
+	list-style: none;
+}
+html{
+	font-family: "Verdana","微软雅黑";
+	font-size: 100%;
+	height: 100%;
+}
+#tag-page{
+	margin: 10% auto;
+	width: 40%;
+	text-align: center;
+	max-width: 600px;
+	min-width: 300px;
+	color: #fff;
+}
+#tag-page > h2{
+	color: #222;
+	font-size: 2rem;
+}
+#tag-page > h3{
+	color: #222;
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+}
+#tag-link{
+	position: relative;
+}
+#tag-link > ul > li{
+	float: left;
+	width: 33.333333%;
+	background-color: rgba(0,0,0,0.3);
+	height: 40px;
+	line-height: 40px;
+	font-size: 1rem;
+
+}
+#tag-link > ul > li > a{
+	background-color: rgba(0,0,0,0.3);
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+	display: block;
+	width: 100%;
+}
+#tag-link > div{
+	position: absolute;
+	width: 100%;
+	top: 40px;
+	background-color: #eee;
+	color: #222;
+	min-height: 150px;
+}
+#tag-link > div:nth-child(2),
+#tag-link > div:nth-child(3){
+	display: none;
+}
+#tag-link > div:target{
+	display: block;
+}
+
+#one:target ~ ul > li:nth-child(2) > a,
+#one:target ~ ul > li:nth-child(3) > a,
+#two:target ~ ul > li:nth-child(1) > a,
+#two:target ~ ul > li:nth-child(3) > a,
+#three:target ~ ul > li:nth-child(1) > a,
+#three:target ~ ul > li:nth-child(2) > a{
+	background-color: rgba(0,0,0,0.3);
+	color: #eee;
+}
+#tag-link > ul > li:nth-child(1) > a,
+#two:target ~ ul > li:nth-child(2) > a,
+#three:target ~ ul > li:nth-child(3) > a{
+	background-color: #eee;
+	color: #222;
+}
+.inputbox > ul > li:nth-child(1){
+	width: 62%;
+	float: left;
+	margin-left: 2%;
+}
+.inputbox > ul > li:nth-child(2){
+	width: 32%;
+	float: right;
+	margin-right: 2%;
+	text-align: right;
+	margin-top: 20px;
+}
+.inputbox > ul > li > img{
+	width: 80%;
+	margin-top: 10px;
+}
+.inputbox > ul > li > input{
+	padding: 8px;
+	display: block;
+	width: 100%;
+	border: none;
+}
+.inputbox > ul > li > input:nth-child(1){
+	border: #ccc 1px solid;
+	margin-top: 10px;
+}
+.inputbox > ul > li > input:nth-child(2){
+	border-left: #ccc 1px solid;
+	border-right: #ccc 1px solid;
+	border-bottom: #ccc 1px solid;
+}
+.inputbox > ul > li > input:nth-child(3){
+	margin-top: 10px;
+	background-color: #04aeda;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	margin-bottom: 10px;
+}/*
+.inputbox > ul > li > p{
+	text-align: left;
+}
+.inputbox > ul > li > p > input:nth-child(1){
+	display: none;
+}
+.inputbox > ul > li > p > label:nth-child(2){
+	display: block;
+	width: 14px;
+	height: 14px;
+	border: #ccc 1px solid;
+	margin-right: 5px;
+	float: left;
+	font-size: 0.5rem;
+	color: #8ABB25;
+	font-weight: bold;
+}
+#checkbox:checked~ label:nth-child(2):after{
+	content: "√";
+}
+.inputbox > ul > li > p > label:nth-child(3){
+	cursor: pointer;
+	float: lfet;
+}
+.inputbox > ul > li > p > span:nth-child(4){
+	float: right;
+}*/
+.inputbox > ul > li > p > input:nth-child(1){
+	display: none;
+}
+.inputbox > ul > li > p > label:nth-child(2){
+	width: 14px;
+	height: 14px;
+	background-color: #eee;
+	border: 1px #aaa solid;
+	float: left;
+}
+.inputbox > ul > li > p > label:nth-child(3){
+	float: left;
+	cursor: pointer;
+}
+.inputbox > ul > li > p > span:nth-child(4){
+	float: right;
+}
+#checkbox:checked ~ label:nth-child(2){
+	background-image: url(../images/tu.jpg);
+}
+#three p{
+	color: #fff;
+}
+#three > ul > li{
+	float: left;
+	cursor: pointer;
+	width: 20%;
+	margin-left: 4%;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#three > ul > li > img{
+	width: 60%;
+}
+#three > ul > li:nth-child(8n+1){
+	background-color: #93C630;
+}
+#three > ul > li:nth-child(8n+2){
+	background-color: #12BDE6;
+}
+#three > ul > li:nth-child(8n+3){
+	background-color: #FD8258;
+}
+#three > ul > li:nth-child(8n+4){
+	background-color: #65126A;
+}
+#three > ul > li:nth-child(8n+5){
+	background-color: #D94D5A;
+}
+#three > ul > li:nth-child(8n+6){
+	background-color: #A8A632;
+}
+#three > ul > li:nth-child(8n+7){
+	background-color: #BF92CC;
+}
+#three > ul > li:nth-child(8n+8){
+	background-color: #F940AA;
+}
+#three > ul > li:hover > img{
+	animation:a .4s ;
+}
+@keyframes a{
+	0% {transform:rotate(6deg);}
+	25%{transform:rotate(-4deg);}
+	50%{transform:rotate(4deg);}
+	75%{transform:rotate(2deg);}
+	100%{transform:rotate(0deg);}
+}
+#three > ul > li:hover{
+	background-color: rgba(0,0,0,0.8);
+}

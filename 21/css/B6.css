@@ -1,0 +1,104 @@
+/* 
+* @Author: www.yaclass.com
+* @Date:   2014-12-25 18:36:13
+* @Last Modified by:   sublime text
+* @Last Modified time: 2015-01-22 09:45:57
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-family: "微软雅黑";
+}
+ul{
+	list-style: none;
+}
+.navbar-nav a,
+.btn:focus,
+.btn:active{
+	outline: none!important;
+	outline-style: none;
+}
+#menu-show,#menu-hidden{
+	display: none;
+}
+#menu-btn-show{
+	border-radius: 8px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 99;
+}
+#menu-btn-hidden{
+	border-radius: 8px;
+	position: fixed;
+	right: -60px;
+	top: 0;
+	z-index: 101;
+	background-color: rgba(255,255,255,1);
+	transition: all 0.4s ease 0s;
+}
+.btn{
+	margin: 0px 5px 0 0;
+}
+.btn-dark{
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 0;
+	color: #fff;
+}
+.btn-white{
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 0;
+	color: #000;
+}
+#sidebar-wrapper{
+	top: 50px;
+	font-size: 2rem;
+	background-color: rgba(0,0,0,.5);
+	height: 350px;
+	margin-right: -250px;
+	overflow-y: auto;
+	position: fixed;
+	right: 0px;
+	transition: all 0.4s ease 0s;
+	width: 100px;
+	z-index: 100;
+	border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px;
+}
+#sidebar-wrapper img{
+	width: 50%;
+}
+#menu-show:checked ~ #sidebar-wrapper{
+	right: 250px;
+}
+#menu-show:checked ~ #menu-btn-hidden{
+	right: 0.5px;
+}
+.navbar-nav{
+	width: 100%;
+}
+.navbar-nav > li{
+	text-indent: 20px;
+	float: none;
+	width: 100%;
+}
+.navbar-nav .sidebar-brand > a{
+	line-height: 30px;
+	height: 60px;
+	font-size: 16px;
+}
+.navbar-nav > li > a{
+	color: #888;
+}
+.navbar-nav > li > a:visited{
+	background-color: #222;
+}
+.navbar-nav > li > a:hover{
+	background-color: #555;
+	color: #fff;
+}
+.navbar-nav .sidebar-brand > a:hover{
+	background-color: #222;
+}

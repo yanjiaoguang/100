@@ -1,0 +1,240 @@
+/* 
+* @Author: sublime text
+* @Date:   2014-11-17 10:07:48
+* @Last Modified by:   sublime text
+* @Last Modified time: 2014-11-27 11:02:01
+*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+ul{
+	list-style: none;
+}
+html{
+	font-family: "Verdana","宋体";
+	font-size: 100%;
+	height: 100%;
+}
+body{
+	font-size: 0.75rem;
+	background-color: #ddd;
+	color: #222;
+}
+a{
+	color: #fff;
+	text-decoration:none;
+	outline: none;
+}
+header{
+	background-color: #222;
+	color: #fff;
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+header > nav > ul > li{
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 20px;
+	font-size: 1rem;
+}
+header > h1 > a{
+	color: #555;
+	float: left;
+	line-height: 50px;
+}
+#checkbox{
+	display: none;
+}
+#mobile-option{
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	background-image: url(../images/19/mobile-option.png);
+	background-position: center;
+}
+#mobile-menu{
+	position: absolute;
+	top: 50px;
+	right: 0;
+	background-color: #222;
+	width: 120px;
+	text-align: center;
+	line-height: 40px;
+	display: none;
+}
+#mobile-menu > ul > li > a{
+	font-size: 1rem;
+}
+#mobile-menu > ul > li{
+	border: 1px #333 solid;
+}
+#main{
+	width: 95%;
+	padding: 20px auto;
+}
+#left{
+	width: 68%;
+	margin: 20px auto;
+	float: left;
+	margin-left: 20px;
+}
+#left > article{
+	background: #fff;
+	border-radius: 8px; 
+	box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+	margin-bottom:20px;
+}
+#left > article > img{
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 150px;
+}
+#left > article > p{
+	padding: 10px;
+	text-indent: 2em;
+	font-size: 1rem;
+}
+#left > article > p > a{
+	color: #3375ae;
+}
+#left > article > h1 {
+	color: #888;
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+	margin-left: 5px;
+}
+#right{
+	width: 24%;
+	float: left;
+	margin-top: 20px;
+}
+#right > aside{
+	background-color: #fff;
+	margin-bottom:20px;
+	border-radius: 8px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+	padding: 10px;
+	font-size: 0.875rem;
+}
+
+#right > aside > nav > ul > li > a{
+	color: black;
+}
+#right > aside > nav > ul > li > a > span{
+	color: #c63531;
+}
+#right > aside > h1{
+	text-align: center;
+	margin-bottom: 5px;
+}
+#right > aside > nav > ul > li{
+	margin-top: 2px;
+	margin-left: 10px;
+}
+footer{
+	background-color: #222;
+	width: 100%;
+	clear: both;
+	color: #fff;
+	padding: 10px;
+}
+#logo{
+	width: 30%;
+	float: left;
+	border-right: #333 1px solid;
+	text-align: center;
+}
+#logo > img{
+	width: 60%;
+}
+#foot-link{
+	float: left;
+	width: 40%;
+	margin-top: 4%;
+}
+#foot-link > ul > li{
+	float: left;
+	width: 25%;
+	text-align: center;
+	font-size: 1rem;
+}
+#share{
+	float: left;
+	text-align: center;
+	width: 30%;
+}
+#share > ul > li{
+	margin-right: auto;
+	margin-left: auto;
+}
+#share img{
+	width: 30%;
+	margin-top: 10px;
+}
+/*电脑*/
+@media screen and (min-width: 768px){
+	#mobile-menu,
+	#mobile-option{
+		display: none;
+	}
+	#left{
+		width: 70%;
+	}
+	#right{
+		width: 22%;
+		margin-left: 2%;
+	}
+	#logo{
+		display: block;
+	}
+}
+/*手机*/
+@media screen and (max-width: 767px){
+	#checkbox:checked ~ div#mobile-menu{
+	display: block;
+	}
+	header > nav{
+		display: none;
+	}
+	#left{
+		width: 100%;
+	}
+	#right{
+		width: 100%;
+	}
+	#right{
+		margin-left: 20px;
+		margin-top: -20px;
+	}
+	#logo{
+		display: none;
+	}
+	#foot-link,#share{
+		width: 100%;
+	}
+	#foot-link{
+		margin-top: 0;
+		border-bottom: 2px #999 solid;
+	}
+	#foot-link > ul >li{
+		width: 100%;
+		font-size: 2rem;
+		margin-bottom: 10px;
+	}
+	footer{
+		padding: 0;
+	}
+	#share img{
+		padding: 2%;
+	}
+}
