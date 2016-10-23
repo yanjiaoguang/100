@@ -1,0 +1,22 @@
+/* 
+* @Author: sublime text
+* @Date:   2014-09-26 10:03:11
+* @Last Modified by:   sublime text
+* @Last Modified time: 2014-09-26 10:56:21
+*/
+a,span{
+	background-color: #222;
+	width: 100px;
+	height: 100px;
+}
+div{
+	width: 100px;
+	height: 100px;
+	background-color: #888;
+	display: inline;
+}
+#a{
+	display: block;
+	width: 100px;
+	background-color: green;
+}

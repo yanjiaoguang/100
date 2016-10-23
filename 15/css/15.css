@@ -1,0 +1,77 @@
+/* 
+* @Author: sublime text
+* @Date:   2014-10-13 09:50:57
+* @Last Modified by:   sublime text
+* @Last Modified time: 2014-10-13 11:22:12
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	list-style: none;
+}
+html{
+	height: 100%;
+}
+body{
+	background-image: url(../images/15/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+div{
+	width: 400px;
+	height: 200px;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -100px;
+	position: absolute;
+}
+ul>li{
+	float: left;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+#A1{
+	background-color: #888;
+	width: 100px;
+	height: 100px;
+	background: url(../images/15/home.png) no-repeat center;
+	background-size: 80% 80%;
+}
+#A2{
+	background-color: #888;
+	width: 100px;
+	height: 100px;
+	background: url(../images/15/email.png) no-repeat center;
+	background-size: 80% 80%;
+	
+}
+#A3{
+	background-color: #888;
+	width: 100px;
+	height: 100px;
+	background: url(../images/15/search.png) no-repeat center;
+	background-size: 80% 80%;
+}
+#A4{
+	background-color: #888;
+	width: 100px;
+	height: 100px;
+	background: url(../images/15/us.png) no-repeat center;
+	background-size: 80% 80%;
+	
+}
+#bottom{
+	background-image: url(../images/15/4.gif);
+	width: 400px;
+	height: 5px;
+	clear: both;
+
+}
+#A1:hover,#A2:hover,#A3:hover,#A4:hover{
+	background-color: rgba(0,0,0,0.1);
+}

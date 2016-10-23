@@ -1,0 +1,84 @@
+/* 
+* @Author: sublime text
+* @Date:   2014-10-10 09:51:24
+* @Last Modified by:   sublime text
+* @Last Modified time: 2014-10-10 11:15:02
+*/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+div{
+	background-color: #444;
+	width: 100px;
+	height: 50px;
+}
+#A1{
+	position: absolute;
+	left: 20%;
+	top: 10%;
+	background: green;
+	z-index: 2;
+	text-align: right;
+	line-height: 80px;
+}
+#A2{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: #222;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+}
+#A3{
+	position: relative;
+	left: 120px;
+	top: 100px;
+	background: red;
+	width: 100px;
+	height: 120px;
+	text-align: right;
+}
+#B1,#B2{
+	width: 50px;
+	height: 50px;
+}
+#B1{
+	position: absolute;
+	top: 0;
+	left: 10%;
+}
+#B2{
+	position: absolute;
+	bottom: 0px;
+	left: 10%;
+}
+#A4{
+	position: absolute;
+	left: 0;
+	top: 20px;
+	z-index: 1;
+	text-align: right;
+	line-height: 80px;
+}
+#A5{
+	width: 100%;
+	background-color: blue;
+	position: absolute;
+	top: 0px;
+	z-index: 3;
+	position: fixed;
+}
+#A5 ul li{
+	float: left;
+	width: 33.33333%;
+	list-style: none;
+	text-align: center;
+	line-height: 50px;
+
+}
+a{
+	color: rgba(200,150,20,80);
+	text-decoration: none;
+}

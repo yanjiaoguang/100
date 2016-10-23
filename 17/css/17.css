@@ -1,0 +1,98 @@
+/* 
+* @Author: sublime text
+* @Date:   2014-10-24 10:07:46
+* @Last Modified by:   Administrator
+* @Last Modified time: 2014-10-27 11:29:38
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-family: "Verdana","微软雅黑";
+	font-size: 100%;
+}
+body{
+	background-color: #222;
+	font-size: 0.75rem;
+	color: #fff;
+}
+ul{
+	list-style: none;
+}
+#slider > input[type=radio]{
+	display: none;
+}
+#slider-inner >ul{
+	width: 300%;
+	position: absolute;
+}
+#slider-inner > ul >li{
+	float: left;
+	position: relative;
+}
+#slider{
+	margin: auto;
+	margin-top: 30px;
+	width: 800px;
+	height: 560px;
+	overflow: hidden;
+	position: relative;
+}
+.info{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.2);
+	width: 100%;
+	height: 60px;
+}
+#slider label{
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	bottom: 15px;
+	cursor: pointer;
+	left: 50%;
+}
+
+#slider label[for=A1] {
+	margin-left: -18px;
+}
+#slider label[for=A3] {
+	margin-left: 18px;
+}
+#slider-inner > ul{
+	transition:left .8s cubic-bezier(0.77,0,0.175,1);
+	left: 0%;
+}
+#A1:checked~#slider-inner > ul{
+	left: 0;
+}
+#A2:checked~#slider-inner > ul{
+	left: -100%;
+}
+#A3:checked~#slider-inner > ul{
+	left: -200%;
+}
+	
+#B1,#B2,#B3{
+	transition: background-color 3s;
+}
+#A1:checked~#slider-inner > ul > li >div#B1,
+#A2:checked~#slider-inner > ul > li >div#B2,
+#A3:checked~#slider-inner > ul > li >div#B3{
+	background-color: rgba(120,120,120,.8);
+}
+#slider label[for=A1],
+#slider label[for=A2],
+#slider label[for=A3]{
+	transition:background-color .2s;
+	background-color: #666;
+}
+#A1:checked~label[for=A1],
+#A2:checked~label[for=A2],
+#A3:checked~label[for=A3]{
+	background-color: #fff;
+}

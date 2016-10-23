@@ -1,0 +1,48 @@
+/* 
+* @Author: sublime text
+* @Date:   2014-09-22 10:38:44
+* @Last Modified by:   sublime text
+* @Last Modified time: 2014-09-22 11:30:31
+*/
+body{
+	background-color: #222;
+	color: white;
+}
+#A1{
+	width: 150px;
+	height: 100px;
+	background-color: yellow;
+	float: left;
+}
+#A2{
+	width: 50%;
+	height: 50px;
+	background-color: rgba(0,0,255,0.8);
+	float: left;
+}
+#B1{
+	margin: 0px;
+	padding: 0px;
+}
+	#B1 li{
+		list-style: none;
+		float: left;
+		text-align: center;
+		width: 33.3333333%;
+		height: 50px;
+		background-color: #555;
+		line-height: 50px;
+		
+	}
+#A3{
+	background-color: rgba(255,255,0,0.5);
+	width: 200px;
+	clear: left;
+	float: left;
+}
+#A4{
+	width: 50%;
+	height: 80px;
+	background-color: hsla(120,100%,50%,0.1);
+	float: right;
+}

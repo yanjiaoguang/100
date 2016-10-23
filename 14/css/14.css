@@ -1,0 +1,66 @@
+/*
+* @Author: sublime text
+* @Date:   2014-10-10 11:32:29
+* @Last Modified by:   sublime text
+* @Last Modified time: 2014-10-11 11:48:32
+
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html{
+	font-family: "Verdana","微软雅黑";
+	font-size: 100%;
+}
+body{
+	background-color: #111;
+}
+ul{
+	list-style: none;
+}
+body > div{
+	margin-right: auto;
+	margin-left: auto;
+	width: 60%;
+	margin-top: 30px;
+	font-size: 0.75rem;
+	max-width: 750px;
+	min-width: 450px;
+	background-color: #222;
+	border-radius: 10px;
+}
+.item{
+	float: left;
+	width: 33%;
+	color: #fff;
+	text-align: center;
+	line-height: 3;
+	margin-left: 1px;
+	cursor: pointer;
+}
+.item > ul li{
+	margin-top: 1px;
+	background-color: rgba(255,255,255,0.3);
+	display: none;
+}
+h3{
+	background-color: rgba(255,255,255,0.1)
+}
+.item:first-child > h3{
+	border-top-left-radius: 8px;
+}
+.item:last-child > h3{
+	border-top-right-radius: 8px;
+}
+.item ul li:last-child{
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.item:hover ul li{
+	display: block;
+	transition: all .3s;
+}
+.item ul li:hover{
+	background-color: #b5b5f1;
+}

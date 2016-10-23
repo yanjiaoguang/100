@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>盒子模型</title>
+	<style type="text/css">
+	html{
+		font-size: 100;
+	}
+	body{
+		background-color:  #222;
+		color: #fff;
+		margin: 0px;
+		padding: 0px;
+	}
+	div{
+		background-color: green;
+		width: 100px;
+		height: 50px;
+		margin-top: 10px;
+		text-align: center;
+		line-height: 50px;
+	}
+	#A1{
+		border: #fff 1px solid;
+	}
+	#A2{
+		border-color: whitl;
+		border-width: 1px;
+		border-style:   dashed;
+	}
+	#A3{
+		margin-right: auto;
+		margin-left: auto;
+		width: 50%;
+	}
+	#A4{
+		margin-left: 50%;
+	}
+	#A5{
+		border-radius: 10px;
+		border-bottom: yellow 1px solid;
+		padding-top: 10px;
+		box-sizing:border-box;/*使div的高度不会被padding撑高，保持原来的高度。*/
+	}
+	#A6{
+		width: 50px;
+		border-radius:25px;
+	}
+	</style>
+</head>
+<body>
+	<div id="A1">块1</div>
+	<div id="A2">块2</div>
+	<div id="A3">块3</div>
+	<div id="A4">块4</div>
+	<div id="A5">块5</div>
+	<div id="A6">块6</div>
+</body>
+</html>
