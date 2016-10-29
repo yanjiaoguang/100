@@ -1,0 +1,28 @@
+.about{
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	h1{
+		border-left: 3px solid $primary-color;
+		padding-left: 20px;
+	}
+	img{
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		display: block;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 800px){
+	.about{
+		text-align: center;
+		h1{
+			width: 150px;
+			margin: 0 auto;
+			border-bottom: 3px solid $primary-color;
+			border-left: none;
+		}
+	}
+}
